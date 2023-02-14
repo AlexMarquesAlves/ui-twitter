@@ -4,6 +4,13 @@ export type AppLayoutProps = {
   children: ReactNode
 }
 
+export const metadata = {
+  title: {
+    default: 'Rocketseat',
+    template: '%s | Rocketseat',
+  },
+}
+
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <>

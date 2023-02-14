@@ -2,6 +2,10 @@ import { User } from '@/components/User'
 import Link from 'next/link'
 import { Suspense } from 'react'
 
+export const metadata = {
+  title: 'Home',
+}
+
 export default async function Home() {
   // eslint-disable-next-line no-unused-vars
   // const [res1, res2] = await Promise.all([fetch(''), fetch('')])
@@ -13,7 +17,6 @@ export default async function Home() {
       <Link href={'/app'}>Dashboard</Link>
 
       <Suspense fallback={<p>Carregando usuário...</p>}>
-        {/* @ts-expect-error Async Server Component */}
         <User />
       </Suspense>
     </>

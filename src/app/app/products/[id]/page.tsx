@@ -4,6 +4,12 @@ export type ProductProps = {
   }
 }
 
+export async function generateMetadada({ params }: any) {
+  return {
+    title: `Produto ${params.id}`,
+  }
+}
+
 const Product = ({ params }: ProductProps) => {
   return (
     <>
