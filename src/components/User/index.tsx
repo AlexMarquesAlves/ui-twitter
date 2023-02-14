@@ -1,6 +1,31 @@
 import { Repo } from '../Repo'
 
 export const User = async () => {
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+  await fetch('https://api.github.com/users/alexmarquesalves')
+
   const response = await fetch(
     'https://api.github.com/users/alexmarquesalves',
     {
