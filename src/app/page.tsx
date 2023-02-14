@@ -1,4 +1,6 @@
+import { Repo } from '@/components/Repo'
 import { User } from '@/components/User'
+import { Suspense } from 'react'
 
 export default async function Home() {
   // eslint-disable-next-line no-unused-vars
@@ -7,8 +9,15 @@ export default async function Home() {
   return (
     <>
       <h1>Home</h1>
-      {/* @ts-expect-error Async Server Component */}
-      <User />
+      <Suspense fallback={<p>Carregando repositórios...</p>}>
+        {/* @ts-expect-error Async Server Component */}
+        <Repo />
+      </Suspense>
+
+      <Suspense fallback={<p>Carregando usuário...</p>}>
+        {/* @ts-expect-error Async Server Component */}
+        <User />
+      </Suspense>
     </>
   )
 }
