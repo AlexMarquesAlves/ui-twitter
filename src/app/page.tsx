@@ -4,9 +4,10 @@ export default async function Home() {
   const response = await fetch(
     'https://api.github.com/users/alexmarquesalves',
     {
-      next: {
-        revalidate: 30,
-      },
+      // next: {
+      //   revalidate: 30,
+      // },
+      cache: 'no-store',
     },
   )
   const user = await response.json()
