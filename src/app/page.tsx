@@ -1,7 +1,14 @@
 import Link from 'next/link'
 
 export default async function Home() {
-  const response = await fetch('https://api.github.com/users/alexmarquesalves')
+  const response = await fetch(
+    'https://api.github.com/users/alexmarquesalves',
+    {
+      next: {
+        revalidate: 30,
+      },
+    },
+  )
   const user = await response.json()
 
   return (
