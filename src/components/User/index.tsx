@@ -1,18 +1,14 @@
-export const User = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 5000))
+'use client'
 
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1', {
-    // next: {
-    //   revalidate: 30,
-    // },
-    cache: 'no-store',
-  })
-  const repos = await response.json()
+import { useState } from 'react'
+
+export const User = () => {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>User</h1>
-      <pre>{JSON.stringify(repos, null, 2)}</pre>
+      <h1>{count}</h1>
+      <button onClick={() => setCount((state) => state + 1)}>Increment</button>
     </>
   )
 }
