@@ -24,3 +24,15 @@ export const Sidebar = styled.aside`
     }
   `}
 `
+
+export const MainNavigation = styled.nav`
+  ${({ theme }) => css`
+
+  `}
+`
+
+export const Content = styled.div`
+  ${({ theme }) => css`
+    border-inline: 0.1rem solid ${theme.colors.mediumGray};
+  `}
+`

@@ -3,7 +3,7 @@ export const theme = {
     primaryColor: '#0A1128',
     secondaryColor: '#dc143c',
     white: '#FFFFFF',
-    mediumGray: '#DDDDDD',
+    mediumGray: '#ebeef0',
     bgColor: '#121214',
     textColor: '#e1e1e6',
     tweeterBlue: '#1da1f2',
