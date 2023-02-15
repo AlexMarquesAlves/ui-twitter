@@ -1,6 +1,9 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
   // "terminal.integrated.defaultProfile.windows": "Git Bash",
   "cSpell.words": ["Metadada"]
 }
