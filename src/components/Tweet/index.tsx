@@ -1,15 +1,15 @@
 export type TweetProps = {
   user: string
-  children: string
-  likes?: number
+  children: React.ReactNode | string
+  likes: number
 }
 
-export const Tweet = ({ user, children, likes }: TweetProps) => {
+export const Tweet = (props: TweetProps) => {
   return (
-    <div className="tweet">
-      <strong>{user}</strong>
-      <p>{children}</p>
-      <button>Like {likes ?? 0}</button>
+    <div>
+      <strong>{props.user}</strong>
+      <p>{props.children}</p>
+      <button>Like {props.likes ?? 0}</button>
     </div>
   )
 }
