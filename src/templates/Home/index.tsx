@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import { Content, Layout, NewTweet, Sidebar } from './styles'
+import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
 
 function Home() {
   return (
@@ -13,7 +13,16 @@ function Home() {
         <Sidebar>
           <img src={'/assets/Logo.svg'} alt="logo" />
 
-          <nav></nav>
+          <MainNavigation>
+            <a href="">Home</a>
+            <a href="">Explorer</a>
+            <a href="">Notification</a>
+            <a href="">Messages</a>
+            <a href="">Bookmarks</a>
+            <a href="">Lists</a>
+            <a href="">Profile</a>
+            <a href="">More</a>
+          </MainNavigation>
 
           <NewTweet>Tweet</NewTweet>
         </Sidebar>
