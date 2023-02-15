@@ -25,6 +25,23 @@ export const Sidebar = styled.aside`
   `}
 `
 
+export const MainNavigation = styled.nav`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      font-size: 2rem;
+      text-decoration: none;
+      color: ${theme.colors.textColor};
+    }
+  `}
+`
+
 export const NewTweet = styled.button`
   ${({ theme }) => css`
     background: ${theme.colors.tweeterBlue};
