@@ -1,6 +1,6 @@
 {
   "prettier.configPath": "./.prettierrc.json",
-  "typescript.tsdk": "node_modules\\typescript\\lib",
+  // "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "workbench.colorTheme": "Rosé Pine Moon",
   "workbench.iconTheme": "symbols",
