@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { Content, Layout, Sidebar } from './styles'
 
@@ -9,7 +10,11 @@ function Home() {
       </Head>
 
       <Layout>
-        <Sidebar>Sidebar</Sidebar>
+        <Sidebar>
+          <img src={'/assets/Logo.svg'} alt="logo" />
+
+          <nav></nav>
+        </Sidebar>
         <Content>Content</Content>
       </Layout>
     </>
