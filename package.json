@@ -32,6 +32,7 @@
     "@rocketseat/eslint-config": "^1.2.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "husky": "^8.0.1",
     "jsdom": "^19.0.0",
     "lint-staged": "^13.0.0",
