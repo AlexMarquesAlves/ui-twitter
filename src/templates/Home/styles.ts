@@ -9,3 +9,18 @@ export const Layout = styled.div`
     grid-template-columns: 30rem 1fr;
   `}
 `
+
+export const Sidebar = styled.aside`
+  ${({ theme }) => css`
+    padding: 2.4rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    > img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  `}
+`
