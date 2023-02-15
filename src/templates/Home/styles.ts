@@ -25,9 +25,23 @@ export const Sidebar = styled.aside`
   `}
 `
 
-export const MainNavigation = styled.nav`
+export const NewTweet = styled.button`
   ${({ theme }) => css`
+    background: ${theme.colors.tweeterBlue};
+    border-radius: 999.9rem;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: ${theme.colors.white};
+    font-size: 2rem;
+    font-weight: 900;
+    border: 0;
+    transition: all 300ms ease;
 
+    &:hover {
+      filter: brightness(.9);
+    }
   `}
 `
 
