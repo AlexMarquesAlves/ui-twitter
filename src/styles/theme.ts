@@ -6,6 +6,7 @@ export const theme = {
     mediumGray: '#DDDDDD',
     bgColor: '#121214',
     textColor: '#e1e1e6',
+    tweeterBlue: '#1da1f2',
   },
   font: {
     family: {

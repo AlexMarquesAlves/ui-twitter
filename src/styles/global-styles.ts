@@ -22,6 +22,18 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.textColor};
   }
 
+  body,
+  input,
+  textarea,
+  button {
+    font: 400 1.6rem "Lato", sans-serif;
+
+  }
+
+  button {
+    cursor: pointer;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "Crimson Pro", serif;
     font-weight: 600;
