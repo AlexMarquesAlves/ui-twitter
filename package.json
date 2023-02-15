@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": "lint-staged",
+    "full-lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix --max-warnings=0",
     "type-check": "tsc --noEmit",
     "test": "vitest --passWithNoTests",
     "test:staged": "npm run test --findRelatedTests",

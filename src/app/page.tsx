@@ -1,7 +1,3 @@
-import { User } from '@/components/User'
-import Link from 'next/link'
-import { Suspense } from 'react'
-
 export const metadata = {
   title: 'Home',
 }
@@ -13,12 +9,6 @@ export default async function Home() {
   return (
     <>
       <h1>Home</h1>
-
-      <Link href={'/app'}>Dashboard</Link>
-
-      <Suspense fallback={<p>Carregando usuário...</p>}>
-        <User />
-      </Suspense>
     </>
   )
 }

@@ -1,6 +1,6 @@
 {
   "src/**/*.{ts,tsx,js,jsx}": [
-    "npm run lint -- --fix",
+    "npm run full-lint -- --fix",
     "npm run test -- --watch=false"
   ]
 }
