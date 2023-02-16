@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import {
-  Hash,
+  Bell, Hash,
   House
 } from 'phosphor-react'
 import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
@@ -26,7 +26,7 @@ function Home() {
               <Hash /> Explorer
             </a>
             <a href="">
-              Notification
+              <Bell /> Notification
             </a>
             <a href="">
               Messages
