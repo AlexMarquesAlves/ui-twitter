@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import {
-  Bell, Hash,
+  Bell, Envelope, Hash,
   House
 } from 'phosphor-react'
 import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
@@ -29,7 +29,7 @@ function Home() {
               <Bell /> Notification
             </a>
             <a href="">
-              Messages
+              <Envelope /> Messages
             </a>
             <a href="">
               Bookmarks
