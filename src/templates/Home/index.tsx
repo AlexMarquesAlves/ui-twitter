@@ -11,7 +11,7 @@ import {
   Sparkle,
   User
 } from 'phosphor-react'
-import { Content, Layout, MainNavigation, NewTweet, Sidebar, TimeLine, TimeLineHeader } from './styles'
+import { Content, Layout, MainNavigation, NewTweet, NewTweetForm, Sidebar, TimeLine, TimeLineHeader } from './styles'
 
 function Home() {
   return (
@@ -58,7 +58,9 @@ function Home() {
         <Content>
           <TimeLine>
             <TimeLineHeader>Home <Sparkle /></TimeLineHeader>
+            <NewTweetForm>
 
+            </NewTweetForm>
           </TimeLine>
         </Content>
       </Layout>
