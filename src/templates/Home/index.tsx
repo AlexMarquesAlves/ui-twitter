@@ -7,9 +7,11 @@ import {
   Envelope,
   FileText,
   Hash,
-  House, User
+  House,
+  Sparkle,
+  User
 } from 'phosphor-react'
-import { Content, Layout, MainNavigation, NewTweet, Sidebar, TimeLine } from './styles'
+import { Content, Layout, MainNavigation, NewTweet, Sidebar, TimeLine, TimeLineHeader } from './styles'
 
 function Home() {
   return (
@@ -55,6 +57,7 @@ function Home() {
 
         <Content>
           <TimeLine>
+            <TimeLineHeader>Home <Sparkle /></TimeLineHeader>
 
           </TimeLine>
         </Content>
