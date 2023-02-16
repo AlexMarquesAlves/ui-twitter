@@ -38,6 +38,15 @@ export const MainNavigation = styled.nav`
       font-size: 2rem;
       text-decoration: none;
       color: ${theme.colors.textColor};
+
+      &.active {
+        color: ${theme.colors.tweeterBlue};
+      }
+
+      svg {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
     }
   `}
 `
