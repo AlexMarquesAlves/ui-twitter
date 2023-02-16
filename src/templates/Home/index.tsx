@@ -2,7 +2,9 @@
 import Head from 'next/head'
 import {
   Bell,
-  BookmarkSimple, Envelope,
+  BookmarkSimple,
+  DotsThreeCircle,
+  Envelope,
   FileText,
   Hash,
   House,
@@ -45,7 +47,7 @@ function Home() {
               <User /> Profile
             </a>
             <a href="">
-              More
+              <DotsThreeCircle /> More
             </a>
           </MainNavigation>
 
