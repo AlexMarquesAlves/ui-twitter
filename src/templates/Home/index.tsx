@@ -2,7 +2,9 @@
 import Head from 'next/head'
 import {
   Bell,
-  BookmarkSimple, Envelope, Hash,
+  BookmarkSimple, Envelope,
+  FileText,
+  Hash,
   House
 } from 'phosphor-react'
 import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
@@ -36,7 +38,7 @@ function Home() {
               <BookmarkSimple /> Bookmarks
             </a>
             <a href="">
-              Lists
+              <FileText /> Lists
             </a>
             <a href="">
               Profile
