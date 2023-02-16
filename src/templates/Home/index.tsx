@@ -7,10 +7,9 @@ import {
   Envelope,
   FileText,
   Hash,
-  House,
-  User
+  House, User
 } from 'phosphor-react'
-import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
+import { Content, Layout, MainNavigation, NewTweet, Sidebar, TimeLine } from './styles'
 
 function Home() {
   return (
@@ -53,7 +52,12 @@ function Home() {
 
           <NewTweet>Tweet</NewTweet>
         </Sidebar>
-        <Content>Content</Content>
+
+        <Content>
+          <TimeLine>
+
+          </TimeLine>
+        </Content>
       </Layout>
     </>
   )
