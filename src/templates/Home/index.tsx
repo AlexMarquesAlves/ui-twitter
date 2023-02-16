@@ -59,7 +59,12 @@ function Home() {
           <TimeLine>
             <TimeLineHeader>Home <Sparkle /></TimeLineHeader>
             <NewTweetForm>
+              <label htmlFor="tweet">
+                <img src="https://github.com/alexmarquesalves.png" alt="¡Duque profile picture" />
+                <textarea placeholder="What's happening?" id="tweet" />
+              </label>
 
+              <button type="submit">Tweet</button>
             </NewTweetForm>
           </TimeLine>
         </Content>
