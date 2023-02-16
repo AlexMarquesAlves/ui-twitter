@@ -5,7 +5,8 @@ import {
   BookmarkSimple, Envelope,
   FileText,
   Hash,
-  House
+  House,
+  User
 } from 'phosphor-react'
 import { Content, Layout, MainNavigation, NewTweet, Sidebar } from './styles'
 
@@ -41,7 +42,7 @@ function Home() {
               <FileText /> Lists
             </a>
             <a href="">
-              Profile
+              <User /> Profile
             </a>
             <a href="">
               More
