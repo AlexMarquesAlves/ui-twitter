@@ -1,7 +1,7 @@
 export type TweetProps = {
   user: string
   children: React.ReactNode | string
-  likes: number
+  likes?: number
 }
 
 export const Tweet = (props: TweetProps) => {

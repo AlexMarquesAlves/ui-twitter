@@ -15,8 +15,8 @@
     "storybook": "start-storybook -s public -p 6006",
     "build-storybook": "build-storybook",
     "test": "vitest --passWithNoTests",
-    "test:staged": "npm run test --findRelatedTests",
-    "test:push": "npm run test --watch=false --coverage",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:push": "yarn test --watch=false --coverage",
     "deploy-static": "npm run build && npm run export",
     "lint-staged": "lint-staged",
     "type-check": "tsc --noEmit",
@@ -27,6 +27,7 @@
   "dependencies": {
     "@styled-icons/material-outlined": "^10.34.0",
     "next": "12.1.6",
+    "phosphor-react": "^1.4.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-markdown": "^8.0.3",
