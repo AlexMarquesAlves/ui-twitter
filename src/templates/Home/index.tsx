@@ -11,7 +11,7 @@ import {
   Sparkle,
   User
 } from 'phosphor-react'
-import { Content, Layout, MainNavigation, NewTweet, NewTweetForm, Sidebar, TimeLine, TimeLineHeader } from './styles'
+import { Content, Layout, MainNavigation, NewTweet, NewTweetForm, Separator, Sidebar, TimeLine, TimeLineHeader } from './styles'
 
 function Home() {
   return (
@@ -66,6 +66,8 @@ function Home() {
 
               <button type="submit">Tweet</button>
             </NewTweetForm>
+
+            <Separator />
           </TimeLine>
         </Content>
       </Layout>
