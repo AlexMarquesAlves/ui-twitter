@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { TweetContent, Wrapper } from './styles'
+import { TweetContent, TweetContentHeader, Wrapper } from './styles'
 
 export type TweetProps = {
   user: string
@@ -13,6 +13,12 @@ export const Tweet = (props: TweetProps) => {
       <img src="https://github.com/alexmarquesalves.png" alt="¡Duque profile picture" />
 
       <TweetContent>
+        <TweetContentHeader>
+          <strong>¡Duque de Terno</strong>
+          <span>@dev_duque</span>
+        </TweetContentHeader>
+
+
 
       </TweetContent>
     </Wrapper>
