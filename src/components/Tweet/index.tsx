@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+import { Wrapper } from './styles'
+
 export type TweetProps = {
   user: string
   children: React.ReactNode | string
@@ -6,10 +9,10 @@ export type TweetProps = {
 
 export const Tweet = (props: TweetProps) => {
   return (
-    <div>
-      <strong>{props.user}</strong>
-      <p>{props.children}</p>
-      <button>Like {props.likes ?? 0}</button>
-    </div>
+    <Wrapper>
+      <img src="https://github.com/alexmarquesalves.png" alt="¡Duque profile picture" />
+
+
+    </Wrapper>
   )
 }
