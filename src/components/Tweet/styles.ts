@@ -5,3 +5,9 @@ export const Wrapper = styled.a`
     /*  */
   `}
 `
+
+export const TweetContent = styled.div`
+  ${({ theme }) => css`
+    /*  */
+  `}
+`
