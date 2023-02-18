@@ -31,7 +31,14 @@ export const TweetContent = styled.div`
 
 export const TweetContentHeader = styled.div`
   ${({ theme }) => css`
-    /*  */
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    span {
+      font-size: 1.4rem;
+      color: ${theme.colors.textColor};
+    }
   `}
 `
 
