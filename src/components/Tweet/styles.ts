@@ -44,7 +44,28 @@ export const TweetContentHeader = styled.div`
 
 export const TweetContentFooter = styled.div`
   ${({ theme }) => css`
-     /*  */
+     display: flex;
+     align-items: center;
+     gap: 4.8rem;
+     margin-top: 1.2rem;
+
+     button {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: transparent;
+      border: 0;
+      font-size: 1.4rem;
+      color: ${theme.colors.textColor};
+
+      &:hover {
+        color: ${theme.colors.tweeterBlue};
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
      }
   `}
 `
