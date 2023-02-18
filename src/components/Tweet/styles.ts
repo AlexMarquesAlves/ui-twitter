@@ -19,7 +19,13 @@ export const Wrapper = styled.a`
 
 export const TweetContent = styled.div`
   ${({ theme }) => css`
-    /*  */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    p {
+      line-height: 2rem;
+    }
   `}
 `
 
