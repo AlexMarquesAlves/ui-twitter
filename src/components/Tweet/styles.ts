@@ -17,3 +17,9 @@ export const TweetContentHeader = styled.div`
     /*  */
   `}
 `
+
+export const TweetContentFooter = styled.div`
+  ${({ theme }) => css`
+     /*  */
+  `}
+`

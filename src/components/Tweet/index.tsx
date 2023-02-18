@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { TweetContent, TweetContentHeader, Wrapper } from './styles'
+import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
+import { TweetContent, TweetContentFooter, TweetContentHeader, Wrapper } from './styles'
 
 export type TweetProps = {
   user: string
@@ -18,8 +19,22 @@ export const Tweet = (props: TweetProps) => {
           <span>@dev_duque</span>
         </TweetContentHeader>
 
+        <TweetContentFooter>
+          <button>
+            <ChatCircle />
+            20
+          </button>
 
+          <button>
+            <ArrowsClockwise />
+            20
+          </button>
 
+          <button>
+            <Heart />
+            20
+          </button>
+        </TweetContentFooter>
       </TweetContent>
     </Wrapper>
   )
