@@ -2,13 +2,9 @@
 import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
 import { TweetContent, TweetContentFooter, TweetContentHeader, Wrapper } from './styles'
 
-export type TweetProps = {
-  user: string
-  children: React.ReactNode | string
-  likes?: number
-}
 
-export const Tweet = (props: TweetProps) => {
+
+export const Tweet = () => {
   return (
     <Wrapper>
       <img src="https://github.com/alexmarquesalves.png" alt="¡Duque profile picture" />

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Tweet } from 'components/Tweet'
 import Head from 'next/head'
 import {
   Bell,
@@ -68,6 +69,11 @@ function Home() {
             </NewTweetForm>
 
             <Separator />
+
+            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
+            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
+            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
+            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
           </TimeLine>
         </Content>
       </Layout>
