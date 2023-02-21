@@ -7,6 +7,9 @@ describe('<Tweet />', () => {
       <Tweet />,
     )
     // const strong = screen.getByText('Duque')
+
+
+
     // expect(strong).toBeInTheDocument()
 
   })
