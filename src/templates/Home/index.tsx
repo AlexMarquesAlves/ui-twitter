@@ -18,7 +18,7 @@ function Home() {
         <Content>
           <TimeLine>
 
-            <Header />
+            <Header title={'Home'} />
 
             <NewTweetForm>
               <label htmlFor="tweet">
