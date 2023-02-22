@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Head>
-        <title>Bird blue UI</title>
+        <title>Bird blue UI | Home</title>
       </Head>
 
       <Timeline />

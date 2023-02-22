@@ -51,6 +51,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     /* color: ${({ theme }) => theme.colors.secondaryColor}; */
+    cursor: pointer;
   }
 
   .table {

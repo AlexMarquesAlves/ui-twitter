@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
 import {
   TweetContent,
@@ -13,39 +14,43 @@ export type TweetProps = {
 
 export const Tweet = (props: TweetProps) => {
   return (
-    <Wrapper>
-      <img
-        src="https://github.com/alexmarquesalves.png"
-        alt="¡Duque profile picture"
-      />
 
-      <TweetContent>
-        <TweetContentHeader>
-          <strong>¡Duque de Terno</strong>
-          <span>@dev_duque</span>
-        </TweetContentHeader>
+    <Link href='/status'>
+      <Wrapper >
+        <img
+          src="https://github.com/alexmarquesalves.png"
+          alt="¡Duque profile picture"
+        />
 
-        <p>
-          {props.content}
-        </p>
+        <TweetContent>
+          <TweetContentHeader>
+            <strong>¡Duque de Terno</strong>
+            <span>@dev_duque</span>
+          </TweetContentHeader>
 
-        <TweetContentFooter>
-          <button>
-            <ChatCircle />
-            20
-          </button>
+          <p>
+            {props.content}
+          </p>
 
-          <button>
-            <ArrowsClockwise />
-            20
-          </button>
+          <TweetContentFooter>
+            <button>
+              <ChatCircle />
+              20
+            </button>
 
-          <button>
-            <Heart />
-            20
-          </button>
-        </TweetContentFooter>
-      </TweetContent>
-    </Wrapper>
+            <button>
+              <ArrowsClockwise />
+              20
+            </button>
+
+            <button>
+              <Heart />
+              20
+            </button>
+          </TweetContentFooter>
+        </TweetContent>
+      </Wrapper>
+    </Link>
+
   )
 }
