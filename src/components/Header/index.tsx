@@ -1,3 +1,4 @@
+import { Sparkle } from 'phosphor-react'
 import * as Styled from './styles'
 
 export type HeaderProps = {
@@ -5,5 +6,6 @@ export type HeaderProps = {
 }
 
 export const Header = (props: HeaderProps) => {
-  return <Styled.Title>{props.children}</Styled.Title>
+  return <Styled.TimeLineHeader>Home <Sparkle /></Styled.TimeLineHeader>
+
 }
