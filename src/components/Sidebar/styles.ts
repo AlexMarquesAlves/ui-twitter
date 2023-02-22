@@ -27,7 +27,7 @@ export const MainNavigation = styled.nav`
       gap: 2rem;
       font-size: 2rem;
       text-decoration: none;
-      color: ${theme.colors.textColor};
+      color: ${theme.colors.bgColor};
 
       &.active {
         color: ${theme.colors.tweeterBlue};
