@@ -1,14 +1,9 @@
-import Head from 'next/head'
-import Home from 'templates/Home'
+import App from 'templates/App'
 
 export default function Index() {
   return (
     <>
-      <Head>
-        <title>Homepage</title>
-      </Head>
-
-      <Home />
+      <App />
     </>
   )
 }
