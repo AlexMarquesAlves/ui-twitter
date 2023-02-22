@@ -6,6 +6,13 @@ import { Tweet } from 'components/Tweet'
 import Head from 'next/head'
 import { Content, Layout, NewTweetForm, TimeLine } from './styles'
 
+const tweets = [
+  "Sonha e serás livre de espírito... luta e serás livre na vida.",
+  "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+  "A arte é a autoexpressão lutando para ser absoluta.",
+
+]
+
 function Home() {
   return (
     <>
@@ -32,10 +39,10 @@ function Home() {
 
             <Separator />
 
-            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
-            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
-            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
-            <Tweet user={'¡Duque'} >este é um tweet</Tweet>
+
+            {tweets.map(tweet => {
+              return <Tweet key={tweet} content={tweet} />
+            })}
           </TimeLine>
         </Content>
       </Layout>
