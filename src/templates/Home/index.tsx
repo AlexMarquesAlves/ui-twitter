@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Header } from 'components/Header'
+import { Separator } from 'components/Separator'
 import { Sidebar } from 'components/Sidebar'
 import { Tweet } from 'components/Tweet'
 import Head from 'next/head'
-import { Content, Layout, NewTweetForm, Separator, TimeLine } from './styles'
+import { Content, Layout, NewTweetForm, TimeLine } from './styles'
 
 function Home() {
   return (
