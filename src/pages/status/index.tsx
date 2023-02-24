@@ -2,15 +2,27 @@
 import { Header } from 'components/Header'
 import { Separator } from 'components/Separator'
 import { Tweet } from 'components/Tweet'
+import { FormEvent, useState } from 'react'
 import * as Styled from './styles'
-
-const answers = ['Concordo...', 'Olha, faz sentido!', 'Bem Profundo...']
-
 export type StatusProps = {
   title?: string
 }
 
 const Status = ({ title }: StatusProps) => {
+  const [newAnswer, setNewAnswer] = useState('')
+  const [answer, setAnswer] = useState([
+    'Concordo...',
+    'Olha, faz sentido!',
+    'Bem Profundo...',
+  ])
+
+  function handleCreateNewAnswer(event: FormEvent) {
+    event.preventDefault()
+
+    setAnswer([newAnswer, ...answer])
+    setNewAnswer('')
+  }
+
   return (
     <Styled.Wrapper>
       <Header title={'Tweet'} />
@@ -23,19 +35,26 @@ const Status = ({ title }: StatusProps) => {
 
       <Separator />
 
-      <Styled.AnswerTweetForm>
+      <Styled.AnswerTweetForm onSubmit={handleCreateNewAnswer}>
         <label htmlFor="tweet">
           <img
             src="https://github.com/alexmarquesalves.png"
             alt="¡Duque profile picture"
           />
-          <textarea placeholder="Tweet your answer" id="tweet" />
+          <textarea
+            value={newAnswer}
+            onChange={(event) => {
+              setNewAnswer(event.target.value)
+            }}
+            placeholder="Tweet your answer"
+            id="tweet"
+          />
         </label>
 
         <button type="submit">Answer</button>
       </Styled.AnswerTweetForm>
 
-      {answers.map((answer) => {
+      {answer.map((answer) => {
         return <Tweet key={answer} content={answer} />
       })}
     </Styled.Wrapper>
