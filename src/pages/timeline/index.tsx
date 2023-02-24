@@ -2,21 +2,26 @@
 import { Header } from 'components/Header'
 import { Separator } from 'components/Separator'
 import { Tweet } from 'components/Tweet'
+import { FormEvent, useState } from 'react'
 import * as Styled from './styles'
-
-const tweets = [
-  'Sonha e serás livre de espírito... luta e serás livre na vida.',
-  'O futuro pertence àqueles que acreditam na beleza de seus sonhos.',
-  'A arte é a autoexpressão lutando para ser absoluta.',
-]
 
 export type TimelineProps = {
   children?: React.ReactNode | string
 }
 
 const Timeline = (props: TimelineProps) => {
-  function handleCreateNewTweet(event) {
+  const [newTweet, setNewTweet] = useState('')
+  const [tweets, setTweets] = useState([
+    'Sonha e serás livre de espírito... luta e serás livre na vida.',
+    'O futuro pertence àqueles que acreditam na beleza de seus sonhos.',
+    'A arte é a autoexpressão lutando para ser absoluta.',
+  ])
+
+  function handleCreateNewTweet(event: FormEvent) {
     event.preventDefault()
+
+    setTweets([newTweet, ...tweets])
+    setNewTweet('')
   }
 
   return (
@@ -29,7 +34,14 @@ const Timeline = (props: TimelineProps) => {
             src="https://github.com/alexmarquesalves.png"
             alt="¡Duque profile picture"
           />
-          <textarea placeholder="What's happening?" id="tweet" />
+          <textarea
+            value={newTweet}
+            onChange={(event) => {
+              setNewTweet(event.target.value)
+            }}
+            placeholder="What's happening?"
+            id="tweet"
+          />
         </label>
 
         <button type="submit">Tweet</button>
@@ -40,7 +52,6 @@ const Timeline = (props: TimelineProps) => {
       {tweets.map((tweet) => {
         return <Tweet key={tweet} content={tweet} />
       })}
-
     </Styled.Wrapper>
   )
 }
