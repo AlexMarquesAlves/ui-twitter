@@ -15,11 +15,15 @@ export type TimelineProps = {
 }
 
 const Timeline = (props: TimelineProps) => {
+  function handleCreateNewTweet(event) {
+    event.preventDefault()
+  }
+
   return (
     <Styled.Wrapper>
       <Header title={'Home'} />
 
-      <Styled.NewTweetForm>
+      <Styled.NewTweetForm onSubmit={handleCreateNewTweet}>
         <label htmlFor="tweet">
           <img
             src="https://github.com/alexmarquesalves.png"
