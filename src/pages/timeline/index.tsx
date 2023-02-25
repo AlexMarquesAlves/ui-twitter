@@ -2,7 +2,7 @@
 import { Header } from 'components/Header'
 import { Separator } from 'components/Separator'
 import { Tweet } from 'components/Tweet'
-import { FormEvent, useState } from 'react'
+import { FormEvent, KeyboardEvent, useState } from 'react'
 import * as Styled from './styles'
 
 export type TimelineProps = {
@@ -24,6 +24,13 @@ const Timeline = (props: TimelineProps) => {
     setNewTweet('')
   }
 
+  function handleHotkeySubmit(event: KeyboardEvent) {
+    if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+      setTweets([newTweet, ...tweets])
+      setNewTweet('')
+    }
+  }
+
   return (
     <Styled.Wrapper>
       <Header title={'Home'} />
@@ -37,6 +44,7 @@ const Timeline = (props: TimelineProps) => {
           <textarea
             id="tweet"
             value={newTweet}
+            onKeyDown={handleHotkeySubmit}
             onChange={(event) => {
               setNewTweet(event.target.value)
             }}
