@@ -7,6 +7,10 @@ export const Layout = styled.div`
 
     display: grid;
     grid-template-columns: 30rem 1fr;
+
+    @media (max-width: 780px) {
+      grid-template-columns: 80px 1fr;
+    }
   `}
 `
 
