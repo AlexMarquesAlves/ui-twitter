@@ -35,12 +35,12 @@ const Timeline = (props: TimelineProps) => {
             alt="¡Duque profile picture"
           />
           <textarea
+            id="tweet"
             value={newTweet}
             onChange={(event) => {
               setNewTweet(event.target.value)
             }}
             placeholder="What's happening?"
-            id="tweet"
           />
         </label>
 

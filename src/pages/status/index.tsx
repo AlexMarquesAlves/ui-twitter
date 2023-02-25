@@ -42,12 +42,12 @@ const Status = ({ title }: StatusProps) => {
             alt="¡Duque profile picture"
           />
           <textarea
+            id="tweet"
             value={newAnswer}
             onChange={(event) => {
               setNewAnswer(event.target.value)
             }}
             placeholder="Tweet your answer"
-            id="tweet"
           />
         </label>
 
