@@ -8,6 +8,7 @@ import {
   FileText,
   Hash,
   House,
+  Pencil,
   User
 } from 'phosphor-react'
 import * as Styled from './styles'
@@ -25,47 +26,58 @@ export const Sidebar = (props: SidebarProps) => {
         <Styled.MainNavigation>
           <Link href={`/`}>
             <a className="active">
-              <House weight="fill" /> Home
+              <House weight="fill" />
+              <span>Home</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <Hash /> Explorer
+            <a>
+              <Hash />
+              <span>Explorer</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <Bell /> Notification
+            <a>
+              <Bell />
+              <span>Notification</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <Envelope /> Messages
+            <a>
+              <Envelope />
+              <span>Messages</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <BookmarkSimple /> Bookmarks
+            <a>
+              <BookmarkSimple />
+              <span>Bookmarks</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <FileText /> Lists
+            <a>
+              <FileText />
+              <span>Lists</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <User /> Profile
+            <a>
+              <User />
+              <span>Profile</span>
             </a>
           </Link>
           <Link href={`/`}>
-            <a >
-              <DotsThreeCircle /> More
+            <a>
+              <DotsThreeCircle />
+              <span>More</span>
             </a>
           </Link>
         </Styled.MainNavigation>
 
-        <Styled.NewTweet>Tweet</Styled.NewTweet>
+        <Styled.NewTweet>
+          <Pencil />
+          <span>Tweet</span>
+        </Styled.NewTweet>
       </Styled.Sidebar>
     </>
   )

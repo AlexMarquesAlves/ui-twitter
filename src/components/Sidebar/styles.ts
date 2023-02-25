@@ -12,6 +12,11 @@ export const Sidebar = styled.aside`
       width: 3.2rem;
       height: 3.2rem;
     }
+
+    @media (max-width: 780px) {
+     padding: 2.4rem 1.2rem;
+     align-items: center;
+    }
   `}
 `
 
@@ -38,6 +43,14 @@ export const MainNavigation = styled.nav`
         height: 3.2rem;
       }
     }
+
+    @media (max-width: 780px) {
+     a {
+      span {
+        display: none;
+      }
+     }
+    }
   `}
 `
 
@@ -57,6 +70,21 @@ export const NewTweet = styled.button`
 
     &:hover {
       filter: brightness(.9);
+    }
+
+    > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: none;
+    }
+
+    @media (max-width: 780px) {
+      span {
+        display: none;
+      }
+      svg {
+        display: block;
+      }
     }
   `}
 `
